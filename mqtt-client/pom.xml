@@ -139,6 +139,10 @@
               public static void main(java.lang.String[]);
             }</option>
             <option>-dontoptimize</option>
+            <option>-keepattributes **</option>
+            <option>-keep public class * {
+		public protected *;
+	    } </option>
           </options>
         </configuration>
         <dependencies>
